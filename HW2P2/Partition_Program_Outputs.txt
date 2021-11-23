@@ -1,0 +1,74 @@
+Brian Perez
+CS311
+3/9/20
+HW2P2 Partition.cpp Outputs
+[perez490@empress HW2P2_sort]$ g++ partition.cpp
+[perez490@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 7
+Enter elements one per line..
+1
+2
+3
+4
+5
+6
+7
+Ok the pivot is 1
+Results...
+1|234567
+[perez490@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 8
+Enter elements one per line..
+8
+7
+6
+5
+4
+3
+2
+1
+Ok the pivot is 8
+Swap 8 and 1
+Results...
+1765432|8
+[perez490@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 8
+Enter elements one per line..
+5
+1
+4
+3
+6
+7
+8
+2
+Ok the pivot is 5
+Swap 5 and 2
+Results...
+2143|6785
+[perez490@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 6
+Enter elements one per line..
+4
+3
+1
+2
+7
+5
+Ok the pivot is 4
+Swap 4 and 2
+Results...
+231|475
+[perez490@empress HW2P2_sort]$ ./a.out
+How many elements? (must be less than 10) 5
+Enter elements one per line..
+2
+6
+4
+1
+7
+Ok the pivot is 2
+Swap 2 and 1
+Results...
+1|6427
+[perez490@empress HW2P2_sort]$
