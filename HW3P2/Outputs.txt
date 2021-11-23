@@ -1,0 +1,43 @@
+Brian Perez
+CS 311
+4/13/2020
+HW3P2_Outputs
+
+[perez490@empress forHW3]$ g++ HW3P2client.cpp slist.cpp llist.cpp
+[perez490@empress forHW3]$ ./a.out
+... in llist constructor...
+slist constructor:
+Step 1 addFront
+Step 2 addRear
+Step 3
+[ 4 6 7 8 ]
+Step 4
+Found 6 in location 2
+Step 5 replace 6
+Step 6
+[ 4 0 7 8 ]
+Step 7
+Found 8 in location 4
+Step 8 replace 8
+Step 9
+[ 4 0 7 2 ]
+Step 10
+not found
+Step 11 replace 7
+ERROR: Bad position was given
+.... in llist destructor...
+---- First Part testing done -----
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+true
+false
+false
+true
+false
+false
+false
+.... in llist destructor...
+.... in llist destructor...
+[perez490@empress forHW3]$
