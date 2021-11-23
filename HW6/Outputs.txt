@@ -1,0 +1,168 @@
+Brian Perez
+CS311
+HW6
+4/29/20
+
+HW Pre-Questions:
+1.	*Inter4* How many edges does a tree have (Given N nodes)? Why? (Relate this to the statement above.)[1] Trees have N - 1 edges because trees are undirected connected graphs that do not pair every vertex.
+
+2.	In preparation for the next question, give the adjacency list tables to store the following graphs.
+
+a)   A ------ B                      b) A ---->B
+     |        |                         |      |
+     |        |                        \|/    \|/
+     C        D                         C      D
+   
+        N = 4 in both cases
+        E = 3 in both cases    
+
+Table for a) [1]                      
+[A| 3| -- B -- C  
+[B| 2| -- A -- D 
+[C| 1| -- A
+[D| 1| -- B
+
+Table for b) [1]
+[A| 2| -> B -> C  
+[B| 1| -> D 
+[C| 0| 
+[D| 0| 
+
+
+3.	For an adjacency list representation, G is the table:
+*Inter9* If you have N vertices and E edges in your graph:
+•	how many array slots are needed in G?[1] N slots are needed in G.
+•	how many linked list nodes are required altogether in terms of E:
+a.	for directed G?  E 		Why? _Because each edge only needs to be represented once________  [1]
+b.	for undirected G? E*2____	Why? ___For each pair of vertices, there needs to be an edge connecting a to b and also b to a ______  [1] 
+
+
+
+HW6 Outputs
+
+[perez490@empress forHW6]$ g++ dgraph.cpp llist.cpp slist.cpp hw6client.cpp
+[perez490@empress forHW6]$ ./a.out
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+... in llist constructor...
+slist constructor:
+Enter a file name: table.txt
+A 2 [ B F   ]
+B 2 [ C G ]
+C 1 [ H ]
+D 0 [ empty ]
+E 0 [ empty ]
+F 2 [ I E ]
+G 0 [ empty ]
+H 2 [ G I ]
+I 3 [ A G E ]
+
+Find information of which Vertex?: C
+The degree of the vertex is: 1
+Its adjacent vertices are: [ H ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 4
+.... in llist destructor...
+
+Find information of which Vertex?: B
+The degree of the vertex is: 2
+Its adjacent vertices are: [ C G ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 5
+.... in llist destructor...
+
+Find information of which Vertex?: D
+The degree of the vertex is: 0
+Its adjacent vertices are: [ empty ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 3
+.... in llist destructor...
+
+Find information of which Vertex?: F
+The degree of the vertex is: 2
+Its adjacent vertices are: [ I E ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 1
+.... in llist destructor...
+
+Find information of which Vertex?: I
+The degree of the vertex is: 3
+Its adjacent vertices are: [ A G E ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 8
+.... in llist destructor...
+
+Find information of which Vertex?: J
+Vertex was NOT found.
+
+Find information of which Vertex?: Z
+Vertex was NOT found.
+
+Find information of which Vertex?: 2
+Vertex was NOT found.
+
+Find information of which Vertex?: -1
+Vertex was NOT found.
+
+Find information of which Vertex?: Vertex was NOT found.
+
+Find information of which Vertex?: L
+Vertex was NOT found.
+
+Find information of which Vertex?: A
+The degree of the vertex is: 2
+Its adjacent vertices are: [ B F   ]
+Enter "9" if you want to quit the Program(MUST ENTER A NUMBER): 9
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+.... in llist destructor...
+[perez490@empress forHW6]$
