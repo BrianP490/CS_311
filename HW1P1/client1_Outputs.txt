@@ -1,0 +1,41 @@
+Brian Perez
+2/5/20
+CS311
+clients1_Outputs.txt file
+[perez490@empress HW1P1_stack]$ g++ stack.h stack.cpp client1.cpp
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+
+The result is: 7
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 345+*
+The result is: 27
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 722+-
+The result is: 3
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+56+-+
+Error: You have caused the stack to underflow. Too few operands.
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+56++
+The result is: 18
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 12+34*45+-+
+The result is: 6
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 1234567891234
+Error: You have caused the stack to overflow. Too many operands.
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: +
+Error: You have caused the stack to underflow. Too few operands.
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3+
+Error: You have caused the stack to underflow. Too few operands.
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3#
+Error has occured - Type is: Invalid element
+[perez490@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 2345+
+The result is: 9
+The stack is not empty. The result is incomplete. The program will now termitate.
+
+[perez490@empress HW1P1_stack]$
