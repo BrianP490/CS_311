@@ -1,0 +1,80 @@
+Brian Perez
+CS 311
+2/21/20
+Binary Search Program
+
+1)	Declare a 4x4 matrix containg a vector of integers.  vector<int> Matrix[4][4];
+2)	What does W(n) mean in general? (W? n? W(n)?) W() is the function, n is the size, W(n) is the worst case
+3)	For sequential search:
+a.	W(n) = n	
+b.	When does it happen? It happens when the element being searched for is the last ellement checked.
+4)	What does B(n) mean in general? (B?, n?, B(n)?) B(n) is the best and quickest possible outcome. n is the size, B() is the function
+5)	For sequential search:
+a.	B(n) =	1	
+b.	When does it happen? It happens when the element searched for is in the first index.
+6)	Why is A(n) difficult to determine for the real world problems? There is always a random probability in real world problems.
+7)	Why don’t we care about constants and lesser terms in a time complexity expression? They are insignificant compared to the growth rate of the function.
+8)	Prove that 3n^2 + 4n = O(n^2) as I did in the notes. (must give C and the starting point for n)
+First, we need a C where, Cn^2 >= 3n^2 + 4n
+			(C-3)n^2  >= 4n
+			(C-3)n >= 4;   	let C = 4
+			(4-3)n >= 4
+			n >= 4
+Therefore, it is true for all n>=4 QED.
+			
+9)	Binary search corresponds to the shallow search tree.
+Sequential search corresponds to a / the skewed tree.
+Hint: think of the shape/height
+10)	Thus, the fastest ordered list search does W(n)=Theta(log n) comparisons.
+11)	But, the fastest unordered list search does W(n)=Theta(n) comparisons.
+
+
+HW2P1 Outputs
+
+[perez490@empress HW2P1_search]$ g++ binsearch.cpp
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 1
+comparing against an element in slot 4
+comparing against an element in slot 1
+comparing against an element in slot 0
+Found it in position 1
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 19
+comparing against an element in slot 4
+comparing against an element in slot 7
+comparing against an element in slot 8
+comparing against an element in slot 9
+Found it in position 10
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 5
+comparing against an element in slot 4
+comparing against an element in slot 1
+comparing against an element in slot 2
+Found it in position 3
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 17
+comparing against an element in slot 4
+comparing against an element in slot 7
+comparing against an element in slot 8
+Found it in position 9
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 21
+comparing against an element in slot 4
+comparing against an element in slot 7
+comparing against an element in slot 8
+comparing against an element in slot 9
+Element not found
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 0
+comparing against an element in slot 4
+comparing against an element in slot 1
+comparing against an element in slot 0
+Element not found
+[perez490@empress HW2P1_search]$ ./a.out
+What do you want to look for? 6
+comparing against an element in slot 4
+comparing against an element in slot 1
+comparing against an element in slot 2
+comparing against an element in slot 3
+Element not found
+[perez490@empress HW2P1_search]$
