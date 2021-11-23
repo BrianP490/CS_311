@@ -1,6 +1,7 @@
 Brian Perez
 CS311
 3/9/20
+
 HW2P2 Partition.cpp Outputs
 [perez490@empress HW2P2_sort]$ g++ partition.cpp
 [perez490@empress HW2P2_sort]$ ./a.out
