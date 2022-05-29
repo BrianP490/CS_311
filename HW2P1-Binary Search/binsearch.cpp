@@ -1,8 +1,7 @@
-Brian Perez
-CS311
-2/21/20
-HW2P1 binsearch.cpp
-
+// Brian Perez
+// CS311
+// 2/21/20
+// HW2P1 binsearch.cpp
 
 using namespace std;
 #include <iostream>
